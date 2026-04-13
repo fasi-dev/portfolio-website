@@ -15,6 +15,10 @@ nav {
     text-align: center;
 }
 
+a {
+    color: #00adb5;
+}
+
 nav a {
     color: white;
     margin: 15px;
