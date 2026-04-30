@@ -83,3 +83,8 @@ section {
 #skills {
     background-color: #ffffff;
 }
+
+.project:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
