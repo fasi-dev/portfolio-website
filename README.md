@@ -1,85 +1,53 @@
-# 🚀 Personal Portfolio Website
+# Personal Portfolio Website
 
-A fully responsive personal portfolio website designed to showcase my projects, technical skills, and development journey as a Computer Science student.
-
----
+A clean, responsive personal portfolio built with plain HTML, CSS, and JavaScript to showcase my projects, skills, and education as a Computer Science Engineering student.
 
 ## 🌐 Live Website
 
-👉 https://fasi-dev.github.io/portfolio-website
+👉 **https://fasi-dev.github.io/portfolio-website**
 
----
+Deployed with GitHub Pages.
 
 ## ✨ Features
 
-* 🎯 Clean and minimal user interface
-* 📱 Fully responsive design (mobile-friendly)
-* 🔗 Smooth navigation across sections
-* 💼 Projects section with detailed descriptions and source code links
-* 📬 Contact section with direct GitHub and LinkedIn access
-* ⚡ Basic interactivity using JavaScript
-
----
+- Clean hero, about, skills, projects, education, and contact sections
+- Sticky navigation with scroll-spy highlighting of the active section
+- Mobile-friendly layout with a hamburger menu
+- Project cards linking to the actual GitHub repositories
+- Fully responsive — works on phones, tablets, and desktops
+- No frameworks or build tools — just open and run
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Deployment:** GitHub Pages
-
----
+| Layer | Technology |
+| ----- | ---------- |
+| Structure | HTML5 |
+| Styling | CSS3 (flexbox/grid, custom properties, media queries) |
+| Interactivity | Vanilla JavaScript |
+| Hosting | GitHub Pages |
 
 ## 📂 Project Structure
 
 ```
 portfolio-website/
-│
-├── index.html      # Main structure of the website
-├── style.css       # Styling and layout
-└── script.js       # Interactivity and dynamic behavior
+├── index.html    # Page structure and content
+├── style.css     # Styling, layout, and responsiveness
+├── script.js     # Nav toggle, scroll-spy, footer year
+└── README.md
 ```
 
----
+## 🚀 Run Locally
 
-## 🧠 Key Learnings
+No installation needed:
 
-Through this project, I gained hands-on experience in:
-
-* Structuring a complete front-end project
-* Designing responsive layouts using CSS
-* Implementing basic interactivity with JavaScript
-* Organizing code for readability and scalability
-* Deploying a live website using GitHub Pages
-
----
-
-## 🎯 Purpose
-
-This project was built to:
-
-* Present my work in a professional format
-* Strengthen my front-end development fundamentals
-* Create a centralized platform for showcasing projects
-
----
+1. Clone the repository
+   ```bash
+   git clone https://github.com/fasi-dev/portfolio-website.git
+   ```
+2. Open `index.html` in your browser.
 
 ## 📬 Connect With Me
 
-* 🔗 GitHub: https://github.com/fasi-dev
-* 💼 LinkedIn: https://www.linkedin.com/in/mohammed-fasiuddin-june2005/
-
----
-
-## 🔮 Future Enhancements
-
-* Add animations and transitions for better UI/UX
-* Improve design with modern components
-* Add more projects with live demos
-* Integrate backend for dynamic content
-
----
-
-## 📌 Note
-
-This portfolio represents my initial step into web development and will continue to evolve as I build more projects and gain experience.
-
----
+- GitHub: https://github.com/fasi-dev
+- LinkedIn: https://www.linkedin.com/in/mohammed-fasiuddin-june2005/
+- Email: mohammedfasiuddin649@email.com

@@ -3,63 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasiuddin Portfolio</title>
+    <meta name="description" content="Portfolio of Mohammed Fasiuddin — Computer Science Engineering student and aspiring software developer.">
+    <title>Mohammed Fasiuddin | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<header class="navbar" id="navbar">
+    <nav class="nav container">
+        <a href="#home" class="nav-logo">Fasiuddin<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- Home Section -->
-<section id="home">
-    <h1>Hi, I'm Mohammed Fasiuddin</h1>
-    <p>CSE Student | Aspiring Software Developer</p>
-    <p>Passionate about building real-world projects and improving problem-solving skills</p>
-    <a href="#projects" class="btn">View My Work</a>
+<main>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <p class="hero-greeting">Hi there, I'm</p>
+        <h1>Mohammed Fasiuddin</h1>
+        <p class="hero-role">CSE Student &nbsp;|&nbsp; Aspiring Software Developer</p>
+        <p class="hero-desc">Passionate about building real-world projects and improving problem-solving skills.</p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+    </div>
 </section>
 
 <!-- About Section -->
-<section id="about">
-    <h2>About Me</h2>
-      <p>I am a Computer Science Engineering student with a strong interest in software development and problem solving. I enjoy building projects to apply my knowledge of Java, Data Structures, and Web Development.</p>
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A quick introduction</p>
+        <div class="about-text">
+            <p>I am a Computer Science Engineering student with a strong interest in software development and problem solving. I enjoy building projects that let me apply my knowledge of Java, Data Structures, and Web Development to real problems.</p>
+            <p>I'm currently exploring backend development with Spring Boot and Flask, and I like turning ideas into working applications — from small utilities to full-stack web apps.</p>
+        </div>
+    </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <p>Java, Data Structures, Python, C, C++, HTML, CSS, JavaScript</p>
-</section>
-    
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Smart Library Management System (Flask)</h3>
-    <p>Developed a web-based Library Management System using Flask and MySQL with full CRUD functionality. Implemented dynamic pages using Jinja2 templates and designed a clean UI for managing books and records.</p>
-    <a href="https://github.com/fasi-dev/Library-Management-System" target="_blank" class="btn">View Code</a>
-</div>
-
-    <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal website built using HTML, CSS, and JavaScript to showcase projects and skills. Designed a clean UI with smooth navigation and basic interactivity for better user experience.</p>
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <div class="chips">
+                    <span class="chip">Java</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">C</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">SQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Web &amp; Backend</h3>
+                <div class="chips">
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">Flask</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Tools &amp; Databases</h3>
+                <div class="chips">
+                    <span class="chip">MySQL</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">Git &amp; GitHub</span>
+                    <span class="chip">Maven</span>
+                    <span class="chip">Postman</span>
+                    <span class="chip">Data Structures</span>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Things I've built</p>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>Smart Library Management System</h3>
+                    <p>A web-based Library Management System built with Flask and MySQL. Supports full CRUD operations on books with a clean interface, dynamic pages rendered with Jinja2 templates, and persistent storage.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fasi-dev/Library-Management-System" target="_blank" rel="noopener" class="btn btn-small">View Code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>Task Manager API</h3>
+                    <p>A RESTful Task Manager API built with Java, Spring Boot, Spring Data JPA, and PostgreSQL. Includes request validation, error handling, automated tests, and Docker support.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fasi-dev/task-manager-api" target="_blank" rel="noopener" class="btn btn-small">View Code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>BloodLink — Blood Donation &amp; Emergency System</h3>
+                    <p>A front-end web app that connects blood donors, patients, and blood banks. Features donor registration, emergency requests with urgency levels, compatibility-based donor matching, and an admin dashboard.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fasi-dev/Blood-Donation-and-Emergency-System" target="_blank" rel="noopener" class="btn btn-small">View Code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                    <h3>Portfolio Website</h3>
+                    <p>This website — a responsive personal portfolio built with plain HTML, CSS, and JavaScript, with smooth scroll-spy navigation and a mobile-friendly layout. Deployed on GitHub Pages.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fasi-dev/portfolio-website" target="_blank" rel="noopener" class="btn btn-small">View Code</a>
+                </div>
+            </article>
+
+        </div>
+        <p class="projects-more">More on my <a href="https://github.com/fasi-dev" target="_blank" rel="noopener">GitHub profile →</a></p>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic background</p>
+        <div class="education-card">
+            <div class="education-icon">🎓</div>
+            <div>
+                <h3>B.E. — Computer Science and Engineering</h3>
+                <p class="education-inst">Nitte Meenakshi Institute of Technology (NMIT), Bengaluru</p>
+                <p class="education-period">2024 — Present</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: mohammedfasiuddin649@email.com</p>
-    <p><a href="https://github.com/fasi-dev" target="_blank">GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/mohammed-fasiuddin-june2005/" target="_blank">LinkedIn</a></p>
+<section id="contact" class="section section-contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">I'm always open to connecting and collaborating</p>
+        <div class="contact-links">
+            <a href="mailto:mohammedfasiuddin649@email.com" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span>mohammedfasiuddin649@email.com</span>
+            </a>
+            <a href="https://github.com/fasi-dev" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <span>github.com/fasi-dev</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammed-fasiuddin-june2005/" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon">💼</span>
+                <span>linkedin.com/in/mohammed-fasiuddin-june2005</span>
+            </a>
+        </div>
+    </div>
 </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© <span id="year"></span> Mohammed Fasiuddin. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 
